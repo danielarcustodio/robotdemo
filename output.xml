@@ -1,212 +1,212 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.9 on darwin)" generated="20240909 15:15:28.864" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.9 on darwin)" generated="20240910 13:05:31.168" rpa="false" schemaversion="4">
 <suite id="s1" name="Login" source="/Users/danielarc/Documents/RobotDemo/login.robot">
 <test id="s1-t1" name="Login E Compra" line="9">
 <kw name="Preparar Navegador" library="keywords">
 <kw name="Create Directory" library="OperatingSystem">
 <arg>${EVIDENCIAS_DIR}</arg>
 <doc>Creates the specified directory.</doc>
-<msg timestamp="20240909 15:15:29.195" level="INFO" html="true">Directory '&lt;a href="file:///Users/danielarc/Documents/RobotDemo/evidencias"&gt;/Users/danielarc/Documents/RobotDemo/evidencias&lt;/a&gt;' already exists.</msg>
-<status status="PASS" starttime="20240909 15:15:29.194" endtime="20240909 15:15:29.195"/>
+<msg timestamp="20240910 13:05:31.503" level="INFO" html="true">Directory '&lt;a href="file:///Users/danielarc/Documents/RobotDemo/evidencias"&gt;/Users/danielarc/Documents/RobotDemo/evidencias&lt;/a&gt;' already exists.</msg>
+<status status="PASS" starttime="20240910 13:05:31.503" endtime="20240910 13:05:31.503"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240909 15:15:29.195" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20240909 15:15:29.195" endtime="20240909 15:15:31.581"/>
+<msg timestamp="20240910 13:05:31.504" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20240910 13:05:31.503" endtime="20240910 13:05:33.706"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>${EVIDENCIAS_DIR}Preparar_Navegador.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20240909 15:15:32.005" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/Preparar_Navegador.png"&gt;&lt;img src="evidencias/Preparar_Navegador.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20240909 15:15:31.582" endtime="20240909 15:15:32.005"/>
+<msg timestamp="20240910 13:05:34.070" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/Preparar_Navegador.png"&gt;&lt;img src="evidencias/Preparar_Navegador.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240910 13:05:33.706" endtime="20240910 13:05:34.070"/>
 </kw>
-<status status="PASS" starttime="20240909 15:15:29.194" endtime="20240909 15:15:32.005"/>
+<status status="PASS" starttime="20240910 13:05:31.502" endtime="20240910 13:05:34.070"/>
 </kw>
 <kw name="Acessar Pagina Inicial" library="keywords">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20240909 15:15:32.006" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
-<status status="PASS" starttime="20240909 15:15:32.006" endtime="20240909 15:15:32.410"/>
+<msg timestamp="20240910 13:05:34.072" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20240910 13:05:34.071" endtime="20240910 13:05:34.756"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>xpath://title[text()='Swag Labs']</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20240909 15:15:32.411" endtime="20240909 15:15:32.434"/>
+<status status="PASS" starttime="20240910 13:05:34.756" endtime="20240910 13:05:34.780"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>${EVIDENCIAS_DIR}Pagina_Inicial.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20240909 15:15:32.918" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/Pagina_Inicial.png"&gt;&lt;img src="evidencias/Pagina_Inicial.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20240909 15:15:32.434" endtime="20240909 15:15:32.918"/>
+<msg timestamp="20240910 13:05:35.180" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/Pagina_Inicial.png"&gt;&lt;img src="evidencias/Pagina_Inicial.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240910 13:05:34.780" endtime="20240910 13:05:35.180"/>
 </kw>
-<status status="PASS" starttime="20240909 15:15:32.005" endtime="20240909 15:15:32.918"/>
+<status status="PASS" starttime="20240910 13:05:34.071" endtime="20240910 13:05:35.180"/>
 </kw>
 <kw name="Fazer Login" library="keywords">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@data-test="username"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240909 15:15:32.919" level="INFO">Clicking element 'xpath://*[@data-test="username"]'.</msg>
-<status status="PASS" starttime="20240909 15:15:32.918" endtime="20240909 15:15:32.986"/>
+<msg timestamp="20240910 13:05:35.181" level="INFO">Clicking element 'xpath://*[@data-test="username"]'.</msg>
+<status status="PASS" starttime="20240910 13:05:35.181" endtime="20240910 13:05:35.247"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath://*[@data-test="username"]</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240909 15:15:32.987" level="INFO">Typing text 'standard_user' into text field 'xpath://*[@data-test="username"]'.</msg>
-<status status="PASS" starttime="20240909 15:15:32.986" endtime="20240909 15:15:33.260"/>
+<msg timestamp="20240910 13:05:35.248" level="INFO">Typing text 'standard_user' into text field 'xpath://*[@data-test="username"]'.</msg>
+<status status="PASS" starttime="20240910 13:05:35.247" endtime="20240910 13:05:35.513"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@data-test="password"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240909 15:15:33.261" level="INFO">Clicking element 'xpath://*[@data-test="password"]'.</msg>
-<status status="PASS" starttime="20240909 15:15:33.260" endtime="20240909 15:15:33.330"/>
+<msg timestamp="20240910 13:05:35.514" level="INFO">Clicking element 'xpath://*[@data-test="password"]'.</msg>
+<status status="PASS" starttime="20240910 13:05:35.513" endtime="20240910 13:05:35.572"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath://*[@data-test="password"]</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240909 15:15:33.330" level="INFO">Typing text 'secret_sauce' into text field 'xpath://*[@data-test="password"]'.</msg>
-<status status="PASS" starttime="20240909 15:15:33.330" endtime="20240909 15:15:33.403"/>
+<msg timestamp="20240910 13:05:35.573" level="INFO">Typing text 'secret_sauce' into text field 'xpath://*[@data-test="password"]'.</msg>
+<status status="PASS" starttime="20240910 13:05:35.572" endtime="20240910 13:05:35.640"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@data-test="login-button"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240909 15:15:33.404" level="INFO">Clicking element 'xpath://*[@data-test="login-button"]'.</msg>
-<status status="PASS" starttime="20240909 15:15:33.404" endtime="20240909 15:15:33.522"/>
+<msg timestamp="20240910 13:05:35.641" level="INFO">Clicking element 'xpath://*[@data-test="login-button"]'.</msg>
+<status status="PASS" starttime="20240910 13:05:35.640" endtime="20240910 13:05:35.723"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>${EVIDENCIAS_DIR}Login.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20240909 15:15:34.134" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/Login.png"&gt;&lt;img src="evidencias/Login.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20240909 15:15:33.523" endtime="20240909 15:15:34.134"/>
+<msg timestamp="20240910 13:05:36.249" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/Login.png"&gt;&lt;img src="evidencias/Login.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240910 13:05:35.724" endtime="20240910 13:05:36.249"/>
 </kw>
-<status status="PASS" starttime="20240909 15:15:32.918" endtime="20240909 15:15:34.134"/>
+<status status="PASS" starttime="20240910 13:05:35.180" endtime="20240910 13:05:36.249"/>
 </kw>
 <kw name="Adicionar Produto Ao Carrinho" library="keywords">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@data-test="add-to-cart-sauce-labs-bike-light"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240909 15:15:34.135" level="INFO">Clicking element 'xpath://*[@data-test="add-to-cart-sauce-labs-bike-light"]'.</msg>
-<status status="PASS" starttime="20240909 15:15:34.134" endtime="20240909 15:15:34.183"/>
+<msg timestamp="20240910 13:05:36.251" level="INFO">Clicking element 'xpath://*[@data-test="add-to-cart-sauce-labs-bike-light"]'.</msg>
+<status status="PASS" starttime="20240910 13:05:36.250" endtime="20240910 13:05:36.298"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>${EVIDENCIAS_DIR}Produto_Adicionado.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20240909 15:15:34.653" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/Produto_Adicionado.png"&gt;&lt;img src="evidencias/Produto_Adicionado.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20240909 15:15:34.183" endtime="20240909 15:15:34.654"/>
+<msg timestamp="20240910 13:05:36.758" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/Produto_Adicionado.png"&gt;&lt;img src="evidencias/Produto_Adicionado.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240910 13:05:36.298" endtime="20240910 13:05:36.758"/>
 </kw>
-<status status="PASS" starttime="20240909 15:15:34.134" endtime="20240909 15:15:34.654"/>
+<status status="PASS" starttime="20240910 13:05:36.249" endtime="20240910 13:05:36.758"/>
 </kw>
 <kw name="Ir Para O Carrinho" library="keywords">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@data-test="shopping-cart-link"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240909 15:15:34.655" level="INFO">Clicking element 'xpath://*[@data-test="shopping-cart-link"]'.</msg>
-<status status="PASS" starttime="20240909 15:15:34.654" endtime="20240909 15:15:34.707"/>
+<msg timestamp="20240910 13:05:36.759" level="INFO">Clicking element 'xpath://*[@data-test="shopping-cart-link"]'.</msg>
+<status status="PASS" starttime="20240910 13:05:36.759" endtime="20240910 13:05:36.814"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>${EVIDENCIAS_DIR}Carrinho.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20240909 15:15:35.020" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/Carrinho.png"&gt;&lt;img src="evidencias/Carrinho.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20240909 15:15:34.707" endtime="20240909 15:15:35.020"/>
+<msg timestamp="20240910 13:05:37.149" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/Carrinho.png"&gt;&lt;img src="evidencias/Carrinho.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240910 13:05:36.814" endtime="20240910 13:05:37.149"/>
 </kw>
-<status status="PASS" starttime="20240909 15:15:34.654" endtime="20240909 15:15:35.020"/>
+<status status="PASS" starttime="20240910 13:05:36.758" endtime="20240910 13:05:37.149"/>
 </kw>
 <kw name="Realizar Checkout" library="keywords">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@data-test="checkout"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240909 15:15:35.021" level="INFO">Clicking element 'xpath://*[@data-test="checkout"]'.</msg>
-<status status="PASS" starttime="20240909 15:15:35.021" endtime="20240909 15:15:35.086"/>
+<msg timestamp="20240910 13:05:37.150" level="INFO">Clicking element 'xpath://*[@data-test="checkout"]'.</msg>
+<status status="PASS" starttime="20240910 13:05:37.150" endtime="20240910 13:05:37.203"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@data-test="firstName"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240909 15:15:35.086" level="INFO">Clicking element 'xpath://*[@data-test="firstName"]'.</msg>
-<status status="PASS" starttime="20240909 15:15:35.086" endtime="20240909 15:15:35.139"/>
+<msg timestamp="20240910 13:05:37.204" level="INFO">Clicking element 'xpath://*[@data-test="firstName"]'.</msg>
+<status status="PASS" starttime="20240910 13:05:37.204" endtime="20240910 13:05:37.277"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath://*[@data-test="firstName"]</arg>
 <arg>${FIRST_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240909 15:15:35.140" level="INFO">Typing text 'Teste' into text field 'xpath://*[@data-test="firstName"]'.</msg>
-<status status="PASS" starttime="20240909 15:15:35.140" endtime="20240909 15:15:35.231"/>
+<msg timestamp="20240910 13:05:37.277" level="INFO">Typing text 'Teste' into text field 'xpath://*[@data-test="firstName"]'.</msg>
+<status status="PASS" starttime="20240910 13:05:37.277" endtime="20240910 13:05:37.345"/>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <arg>xpath://*[@data-test="firstName"]</arg>
 <arg>Tab</arg>
 <doc>Simulates user pressing key on element identified by ``locator``.</doc>
-<status status="PASS" starttime="20240909 15:15:35.231" endtime="20240909 15:15:35.270"/>
+<status status="PASS" starttime="20240910 13:05:37.345" endtime="20240910 13:05:37.383"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath://*[@data-test="lastName"]</arg>
 <arg>${LAST_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240909 15:15:35.270" level="INFO">Typing text 'Testing' into text field 'xpath://*[@data-test="lastName"]'.</msg>
-<status status="PASS" starttime="20240909 15:15:35.270" endtime="20240909 15:15:35.367"/>
+<msg timestamp="20240910 13:05:37.383" level="INFO">Typing text 'Testing' into text field 'xpath://*[@data-test="lastName"]'.</msg>
+<status status="PASS" starttime="20240910 13:05:37.383" endtime="20240910 13:05:37.475"/>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <arg>xpath://*[@data-test="lastName"]</arg>
 <arg>Tab</arg>
 <doc>Simulates user pressing key on element identified by ``locator``.</doc>
-<status status="PASS" starttime="20240909 15:15:35.368" endtime="20240909 15:15:35.403"/>
+<status status="PASS" starttime="20240910 13:05:37.475" endtime="20240910 13:05:37.509"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath://*[@data-test="postalCode"]</arg>
 <arg>${POSTAL_CODE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240909 15:15:35.404" level="INFO">Typing text '12349' into text field 'xpath://*[@data-test="postalCode"]'.</msg>
-<status status="PASS" starttime="20240909 15:15:35.404" endtime="20240909 15:15:35.502"/>
+<msg timestamp="20240910 13:05:37.510" level="INFO">Typing text '12349' into text field 'xpath://*[@data-test="postalCode"]'.</msg>
+<status status="PASS" starttime="20240910 13:05:37.509" endtime="20240910 13:05:37.591"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@data-test="continue"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240909 15:15:35.502" level="INFO">Clicking element 'xpath://*[@data-test="continue"]'.</msg>
-<status status="PASS" starttime="20240909 15:15:35.502" endtime="20240909 15:15:35.576"/>
+<msg timestamp="20240910 13:05:37.592" level="INFO">Clicking element 'xpath://*[@data-test="continue"]'.</msg>
+<status status="PASS" starttime="20240910 13:05:37.591" endtime="20240910 13:05:37.673"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>${EVIDENCIAS_DIR}Checkout.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20240909 15:15:35.875" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/Checkout.png"&gt;&lt;img src="evidencias/Checkout.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20240909 15:15:35.576" endtime="20240909 15:15:35.875"/>
+<msg timestamp="20240910 13:05:37.968" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/Checkout.png"&gt;&lt;img src="evidencias/Checkout.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240910 13:05:37.673" endtime="20240910 13:05:37.968"/>
 </kw>
-<status status="PASS" starttime="20240909 15:15:35.020" endtime="20240909 15:15:35.875"/>
+<status status="PASS" starttime="20240910 13:05:37.149" endtime="20240910 13:05:37.968"/>
 </kw>
 <kw name="Finalizar Compra" library="keywords">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@data-test="finish"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240909 15:15:35.876" level="INFO">Clicking element 'xpath://*[@data-test="finish"]'.</msg>
-<status status="PASS" starttime="20240909 15:15:35.875" endtime="20240909 15:15:35.936"/>
+<msg timestamp="20240910 13:05:37.969" level="INFO">Clicking element 'xpath://*[@data-test="finish"]'.</msg>
+<status status="PASS" starttime="20240910 13:05:37.969" endtime="20240910 13:05:38.025"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>${EVIDENCIAS_DIR}Compra_Finalizada.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20240909 15:15:36.321" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/Compra_Finalizada.png"&gt;&lt;img src="evidencias/Compra_Finalizada.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20240909 15:15:35.936" endtime="20240909 15:15:36.321"/>
+<msg timestamp="20240910 13:05:38.325" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/Compra_Finalizada.png"&gt;&lt;img src="evidencias/Compra_Finalizada.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240910 13:05:38.025" endtime="20240910 13:05:38.325"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@data-test="back-to-products"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240909 15:15:36.321" level="INFO">Clicking element 'xpath://*[@data-test="back-to-products"]'.</msg>
-<status status="PASS" starttime="20240909 15:15:36.321" endtime="20240909 15:15:36.373"/>
+<msg timestamp="20240910 13:05:38.326" level="INFO">Clicking element 'xpath://*[@data-test="back-to-products"]'.</msg>
+<status status="PASS" starttime="20240910 13:05:38.326" endtime="20240910 13:05:38.380"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>${EVIDENCIAS_DIR}Voltar_Para_Produtos.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20240909 15:15:36.839" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/Voltar_Para_Produtos.png"&gt;&lt;img src="evidencias/Voltar_Para_Produtos.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20240909 15:15:36.373" endtime="20240909 15:15:36.839"/>
+<msg timestamp="20240910 13:05:38.856" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/Voltar_Para_Produtos.png"&gt;&lt;img src="evidencias/Voltar_Para_Produtos.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240910 13:05:38.380" endtime="20240910 13:05:38.856"/>
 </kw>
-<status status="PASS" starttime="20240909 15:15:35.875" endtime="20240909 15:15:36.839"/>
+<status status="PASS" starttime="20240910 13:05:37.969" endtime="20240910 13:05:38.856"/>
 </kw>
 <doc>Teste de login e compra no site SauceDemo</doc>
-<status status="PASS" starttime="20240909 15:15:29.193" endtime="20240909 15:15:36.839"/>
+<status status="PASS" starttime="20240910 13:05:31.502" endtime="20240910 13:05:38.857"/>
 </test>
 <doc>Teste de login no site SauceDemo</doc>
-<status status="PASS" starttime="20240909 15:15:28.865" endtime="20240909 15:15:36.840"/>
+<status status="PASS" starttime="20240910 13:05:31.169" endtime="20240910 13:05:38.857"/>
 </suite>
 <statistics>
 <total>
