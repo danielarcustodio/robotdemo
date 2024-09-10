@@ -4,7 +4,7 @@ Library    SeleniumLibrary
 *** Keywords ***
 Preparar Navegador
     Create Directory    ${EVIDENCIAS_DIR}
-    Open Browser    about:blank    chrome    options=add_argument("--headless"),add_argument("--no-sandbox"),add_argument("--disable-dev-shm-usage")
+    Open Browser    about:blank    chrome    options=--headless,--no-sandbox,--disable-dev-shm-usage
     Capture Page Screenshot    ${EVIDENCIAS_DIR}Preparar_Navegador.png
 
 Acessar Pagina Inicial
