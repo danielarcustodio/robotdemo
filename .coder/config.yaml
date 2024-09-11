@@ -37,7 +37,7 @@ jobs:
         robot -d evidencias login.robot
 
     - name: Upload test results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: evidencias
         path: evidencias

@@ -7,6 +7,18 @@
 # .coderignore
 # You may customize this file using the .gitignore syntax.
 
+# .coderignore
+# You may customize this file using the .gitignore syntax.
+
+# .coderignore
+# You may customize this file using the .gitignore syntax.
+
+# .coderignore
+# You may customize this file using the .gitignore syntax.
+
+# .coderignore
+# You may customize this file using the .gitignore syntax.
+
 # Python
 __pycache__/
 *.py[cod]
